@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+
+    <style>
+        body{
+            
+           .container{
+            height:560px;
+            width:400px;
+            margin: auto;
+            background-image: url(./images/signup.webp);
+            padding:20px;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-family: sans-serif;
+
+            input{
+                width: 80%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+            .signup{
+                padding: 10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                text-decoration: none;
+                margin-left: 130px;
+            }
+            .signup:hover{
+                background-color: green;
+            }
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome..!!</h1>
+        <p>Register yourself here to avail our tiffin services..</p>
+        <p><b>name</b></p>
+        <input type="text" placeholder="name" required>
+        <p><b>email</b></p>
+        <input type="email" placeholder="email" required>
+        <p><b>password</b></p>
+        <input type="password" placeholder="password" required>
+        <p><b>confirmed password</b></p>
+        <input type="password" placeholder=" confirmed password" required>
+        <br><br><br>
+        <a href="front.html" class="signup">Sign Up</a>
+    </div>
+</body>
+</html>

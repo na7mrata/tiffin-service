@@ -1,0 +1,222 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffc400;
+    padding:50px;
+    
+}
+.container{
+    display: flex;
+    margin: auto;
+    height:900px;
+    width:1000px;
+  
+}
+.div1{
+    height:100%;
+    width:300px;
+    background-color: hsl(122, 43%, 24%);
+    color:#fff;
+    padding:20px;
+
+    .heading{
+        height:80px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .buttons{
+        height:350px;
+        margin: auto;
+        
+
+        button{
+            margin:10px;
+            width:200px;
+            padding:10px 20px;
+            background-color: transparent;
+            color:#fff;
+            border:none;
+            cursor:pointer;
+            border-radius: 40px;
+            text-align: start;
+        }
+        button:hover{
+            background-color: #ffc400;
+        }
+        
+
+        ul{
+            list-style: none;
+        }
+    }
+    .log{
+        margin-top: 360px;
+        .logout{
+            margin:10px;
+            width:200px;
+            padding:10px 20px;
+            background-color: transparent;
+            color:#fff;
+            border:none;
+            cursor:pointer;
+            border-radius: 40px;
+            text-decoration: none;
+        }
+        .logout:hover{
+                background-color:hwb(121 1% 79%);
+        }
+    }
+}
+.div2{
+    background-color: #b3dff0f4;
+    width:700px;
+    padding:20px;
+
+    .bar{
+        padding:20px;
+        display: flex;
+        gap:5px;
+    input{
+        width:300px;
+        border:none;
+        height:40px;
+        border-radius: 30px;
+        padding:20px;
+    }
+    i{
+        padding:5px;
+        font-size: 30px;
+        height: 40px;
+        width:40px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+}
+.recommend{
+    background-color: #ffc400;
+    height:100px;
+    border-radius: 10px;
+    padding:10px;
+
+    .content{
+        display: flex;
+        gap:5px;
+
+        .arrows{
+            margin-left: 450px;
+        }
+    }
+
+    .cards{
+    display: flex;
+    gap:20px;
+    padding:10px;
+    justify-content: center;
+    }
+
+    img{
+        height:30px;
+        width:30px;
+        border-radius: 10px;
+    }
+    button{
+        display:flex;
+        border:none;
+        border-radius: 10px;
+        height:40px;
+        width:130px;
+        padding:5px;
+        font-size: 12px;
+    }
+}
+.menu{
+    height:650px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 100%, 0.756);
+}
+.icons{
+    display: flex;
+    gap:30px;
+    padding:20px;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 100%, 0.756);
+
+    .all-product{
+        height:50px;
+        width:500px;
+
+
+    }
+}
+.all-product{
+    display:flex;
+    gap:10px;
+
+    .food-menu,.burger,.pizza,.fish,.coffee,.apple{
+        height:80px;
+        width:150px;
+        background-color: aliceblue;
+        text-align: center;
+        padding: 5px 5px 15px 5px;
+        font-size: 12px;
+        border-radius: 5px;
+
+        i{
+            font-size: 20px;
+            padding:15px;
+            background-color: #b3dff0f4;
+            border-radius: 5px;
+            color:rgba(4, 76, 75, 0.842);
+        }
+    }
+    .food-menu:hover,.burger:hover,.pizza:hover,.fish:hover,.coffee:hover,.apple:hover{
+
+        background-color:hsl(122, 43%, 24%);
+        color: #fff;
+        cursor:pointer;
+    }
+}
+.orders{
+    padding:20px;
+    background-color: hsla(0, 0%, 100%, 0.756);;
+}
+.order-cards{
+    height:460px;
+    width:300px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+
+
+
+    img{
+        height:100px;
+        width:190px;
+        border-radius: 5px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
+.placeOne{
+    background-color: #ffc400;
+    color:#fff;
+    cursor:pointer;
+    border-radius:30px;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px;
+    
+}
+.placeOne:hover{
+    background-color: #ff9f00;
+    color: #fff;
+    cursor:pointer;
+}
+}

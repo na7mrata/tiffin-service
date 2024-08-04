@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+       .container{
+        width: 400px;
+        height:300px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 50px;
+        background-image: url(./images/signup.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: sans-serif;
+        
+
+        ul{
+            list-style-type: none;
+            padding:10px;
+            color:black;
+        }
+        .order{
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+            margin-left: 100px;
+            text-decoration: none;
+        }
+        h3{
+            margin-top: 30px;
+        }
+        #placing{
+            margin-top: 30px;
+        }
+ 
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="margin-left: 20px;">Your Wish Order</h2><hr>
+        <ul class="one">
+            <li>1 Plate Chicken Biryani</li>
+            <li>1 bowl Curry</li>
+            <li>1 Plate Mathha</li>
+            <li>Onions,Lemons</li>
+        </ul>
+        <h3>Total:Rs.100</h3>
+        <div id="placing">
+            <a href="rating.html" class="order">Place Order</a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+    const placing = document.getElementById('placing');
+
+    placing.addEventListener('click', () => {
+        const orderData = {
+            productId: 'biryani',
+            quantity: 1,
+            userId: 'user1'
+        };
+        console.log('Order placed:', orderData);
+        alert("thank you for placing your order");
+
+    });
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffin Service</title>
+
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body{
+            .container{
+                display: flex;
+                height:530px;
+                width:700px;
+                margin: auto;
+                margin-top: 50px;
+                border-radius: 5px;
+                font-family: sans-serif;
+               
+
+                .div1{
+                    width:350px;
+                    background-color: hsla(167, 97%, 13%, 0.899);
+                    color: #ffc400;
+                    padding:20px;
+                    border-radius: 10px 0 0 10px;
+
+                    input{
+                        width:250px;
+                        padding:10px;
+                        border-radius: 5px;
+                        background-color:#fff;
+                        color:#000;
+                        border-color:  #ffc400;
+                    }
+                    a{
+                        color: #ffc400;
+                        margin-top:10px;
+                    }
+                    a:hover{
+                        color: #fff;
+                    }
+                    .log{
+                        padding:10px 105px;
+                        border: none;
+                        background-color: #ffc400;
+                        color:#fff;
+                        cursor:pointer;
+                        text-decoration: none;
+                    }
+                    .log:hover{
+                        background-color: #ff9f00;
+                    }
+                    .account{
+                        display: flex;
+                        gap:10px;
+                    }
+                    
+                }
+
+                .div2{
+                    width:350px;
+                    
+
+                    img{
+                        height:530px;
+                        width:350px;
+                        border-radius: 0 10px 10px 0;
+                    }
+                }
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <h1>Hello!!</h1>
+            <p>Welcome to the tiffin service page</p>
+            <p>Please Login here to continue further..</p><br>
+            <p style="padding:5px;">name</p>
+            <input type="text" placeholder="your full name" required><br><br>
+            <p style="padding:5px;">email</p>
+            <input type="email" placeholder="your email address" required><br><br>
+            <p style="padding:5px;">password</p>
+            <input type="password" placeholder="password" required><br>
+            <a href="#" style="margin-left: 140px;">forgot password?</a><br><br><br>
+            <a href="index.html" class="log">Login</a><br><br>
+            <p style="margin-left:120px;">or</p><br>
+            <div class="account">
+            <p>Don't have an account?</p>
+            <a href="signup.html">sign up</a>
+            </div>
+        </div>
+        <div class="div2">
+            <img src="./images/food1.jpg">
+        </div>
+    </div>
+
+</body>
+</html>

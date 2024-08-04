@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating System</title>
+    <style>
+        .container{
+            text-align: center;
+            background-color: #b3dff0f4;
+            height:300px;
+            width:390px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 40px;
+        
+        }
+        .star-rating {
+            width: 390px;
+            align-items: start;
+            direction: rtl;
+            display: flex;
+            font-size: 2rem;
+            text-align: center;
+           height:100px;
+            justify-content: center;
+            background-color: #b3dff0f4;
+            border-radius: 5px;
+        
+    
+           
+        }
+        .star-rating input {
+            display: none;
+        }
+        .star-rating label {
+            color: #fff;
+            cursor: pointer;
+        }
+        .star-rating input:checked ~ label {
+            color: #f90;
+        }
+        .star-rating input:hover ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #fc0;
+        }
+        #average-rating{
+            text-align: center;
+            width: 380px;
+            margin-top: 30px;
+        }
+        .home{
+
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .home:hover{
+            background-color: rgba(30, 70, 31, 0.929);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Thank you for placing order</h2>
+    <p>Please rate as per your experience..</p>
+<div class="star-rating">
+    <input type="radio" id="5-stars" name="rating" value="5" />
+    <label for="5-stars" class="star">&#9733;</label>
+    <input type="radio" id="4-stars" name="rating" value="4" />
+    <label for="4-stars" class="star">&#9733;</label>
+    <input type="radio" id="3-stars" name="rating" value="3" />
+    <label for="3-stars" class="star">&#9733;</label>
+    <input type="radio" id="2-stars" name="rating" value="2" />
+    <label for="2-stars" class="star">&#9733;</label>
+    <input type="radio" id="1-star" name="rating" value="1" />
+    <label for="1-star" class="star">&#9733;</label>
+</div>
+<h3>Thank You</h3>
+<a href="index.html" class="home">Home</a>
+</div>
+
+<script>
+    const ratings = [];
+
+    document.querySelector('.star-rating').addEventListener('change', function(e) {
+        if (e.target.tagName === 'INPUT') {
+            const ratingValue = parseInt(e.target.value);
+            ratings.push(ratingValue);
+            alert(`You rated this ${ratingValue} stars`);
+            calculateAverageRating();
+        }
+    });
+
+    function calculateAverageRating() {
+        const total = ratings.reduce((sum, rating) => sum + rating, 0);
+        const average = (total / ratings.length).toFixed(1);
+        document.getElementById('average-value').textContent = average;
+    }
+</script>
+
+</body>
+</html>
+
+
